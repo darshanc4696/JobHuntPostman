@@ -1,6 +1,7 @@
 package com.telusko.JobHuntPostman.repo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -19,6 +20,7 @@ public class JobRepo {
 	}
 
 	public List<JobPost> viewAllJobs() {
+		jobs.add(new JobPost(1, "JAVA developer", "Good in JSE", 3, new ArrayList<>(Arrays.asList("Java","MySQL"))));
 		return jobs;
 	}
 
